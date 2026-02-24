@@ -22,14 +22,14 @@
 // const newId = new Id("Yves");
 // console.log(newId.getName());
 
-//Actually we can inherit from more than one interface
+// ---> Actually we can inherit from more than one interface
 interface Name{
     name: string;
 }
 interface Age{
     age?: number;
 }
-interface Greet extends Name, Age {greet():void}
+interface Greet extends Name, Age {greet:()=>string}
 
 let obj: Greet = {
     name: "Yves Tabor",
