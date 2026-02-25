@@ -41,5 +41,3 @@ class Student extends Person {
 
 new Student("John").getname();
 new Person().getname();
-
-
