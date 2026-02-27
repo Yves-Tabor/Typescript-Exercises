@@ -4,17 +4,14 @@
 // const pair = createPair("Hello", 662);
 // console.log(pair);
 
-interface Named<S, T>{
+interface Named<S = string, T extends string | number = number>{
     name: S,
     age: T
 }
 
-class Person implements Named<string, number>{
+class Person implements Partial<Named<string, number>>{
         public name: string;
-        public age: number;
-    constructor(n: string, a: number){
+    constructor(n: string){
         this.name = n;
-        this.age = a;
     }
-    
 }
