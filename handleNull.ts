@@ -1,6 +1,7 @@
 const user = null;
-console.log(user?.name);
+const Name = user?.name;
 
 const username = null;
 console.log(username ?? "Guest");
 
+console.log(Name);

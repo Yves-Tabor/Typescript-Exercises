@@ -12,19 +12,44 @@
 //   }
 // }
 
-interface Log{
-    timestamp: number,
-    message: string
+// interface Log{
+//     timestamp: number,
+//     message: string
+// }
+
+// class Logger {
+//   logs: Log[] = [];
+
+//   addLog(message: string) {
+//     this.logs.push({ timestamp: Date.now(), message });
+//   }
+
+//    clearLogs():void {
+//     this.logs = [];
+//   }
+// }
+
+interface Log {
+  timestamp: number;
+  message: string;
 }
 
 class Logger {
-  logs: Log[] = [];
+  static logs: Log[] = [];
 
-  addLog(message: string) {
+  static addLog(message: string): void {
     this.logs.push({ timestamp: Date.now(), message });
   }
 
-   clearLogs():void {
+  static clearLogs(): void {
     this.logs = [];
   }
 }
+
+Logger.addLog("Hello");
+Logger.addLog("World");
+
+console.log(Logger.logs);
+
+Logger.clearLogs();
+console.log(Logger.logs);
