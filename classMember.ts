@@ -1,5 +1,4 @@
 
-
 class Person{
   constructor(protected name:string){}
   getName():string{
