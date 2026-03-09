@@ -4,15 +4,15 @@ const user = {
     name: "walves",
     age: 22
 }
-// function updateProp<T, K extends keyof T>(obj: T, key: K, value: T[K]): T{
-//     return {...obj, [key]: value};
-// }
-
-// console.log(updateProp(user, "age", 23))
-
-// Second alternative: updating with a partial object that will override properties
-function mergeObjects <T>(obj: T, obj2: Partial<T>): T{
-    return {...obj, ...obj2};
+function updateProp<T, K extends keyof T>(obj: T, key: K, value: T[K]): T{
+    return {...obj, [key]: value};
 }
 
-console.log(mergeObjects(user, { name: "Bob" }))
+console.log(updateProp(user, "age", 23))
+
+// Second alternative: updating with a partial object that will override properties
+// function mergeObjects <T>(obj: T, obj2: Partial<T>): T{
+//     return {...obj, ...obj2};
+// }
+
+// console.log(mergeObjects(user, { name: "Bob" }))
