@@ -1,6 +1,7 @@
 
 
 abstract class Registration{
+
     constructor(protected name: string){}
     start(){
         return "Registration for " + this.name;
