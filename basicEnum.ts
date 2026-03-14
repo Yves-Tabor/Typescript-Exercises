@@ -1,12 +1,3 @@
-
-
-
-
-
-
-
-
-
 enum Direction {
   Up,
   Down,
