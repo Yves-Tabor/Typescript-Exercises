@@ -1,7 +1,3 @@
-
-
-
-
 abstract class Registration{
     constructor(protected name: string){}
     start(){
