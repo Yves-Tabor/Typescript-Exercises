@@ -3,7 +3,6 @@
 
 
 
-
 enum Direction {
   Up,
   Down,
