@@ -1,8 +1,6 @@
 
 
 
-
-
 enum Direction {
   Up,
   Down,
